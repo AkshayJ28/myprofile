@@ -1,0 +1,44 @@
+{
+  "servicecard": [
+    {
+      "image": "jenkins.png",
+      "heading": "Jenkins",
+      "description": "Expert in creating CI/CD Pipeline"
+    },
+    {
+      "image": "docker.webp",
+      "heading": "Docker",
+      "description": "I do designing with the help of CSS and used in multiple Projects"
+    },
+    {
+      "image": "ansible.png",
+      "heading": "Javascript",
+      "description": "I have created some projects for practising JavaScript Languages."
+    },
+    {
+      "image": "mysql.png",
+      "heading": "React",
+      "description": "I have created some projects with the help of React Js"
+    },
+    {
+      "image": "kubernates.png",
+      "heading": "Docker",
+      "description": "I do designing with the help of CSS and used in multiple Projects"
+    },
+    {
+      "image": "aws.png",
+      "heading": "Javascript",
+      "description": "I have created some projects for practising JavaScript Languages."
+    },
+    {
+      "image": "grafana.png",
+      "heading": "React",
+      "description": "I have created some projects with the help of React Js"
+    },
+    {
+      "image": "prometheus.webp",
+      "heading": "React",
+      "description": "I have created some projects with the help of React Js"
+    }
+  ]
+}

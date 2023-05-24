@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "projectname": "Project 1",
+      "description": "The college management system is a new version of the Management Information System, or MIS – a tool used to collect college operations data and analyze. Management uses this data to make informed decisions."
+    },
+    {
+      "id": "2",
+      "projectname": "Project 2",
+      "description": " Management software tools like Learning Management System (LMS), Course Management Systems, are very common and widely used by academic institutions and schools for instructional delivery. Such type of applications contribute and provide immense help in various ways, including student management, course selection, course discussions, assignment announcements and submission, online testing, and grading etc."
+    },
+    {
+      "id": "3",
+      "projectname": "Project 3",
+      "description": " A Payroll Management System is the process by which employers pay wages to their employees. It’s also how they demonstrate their commitment to their workers, fulfill their obligations to government agencies and keep financial records in order."
+    },
+    {
+      "id": "4",
+      "projectname": "Project 4",
+      "description": "For Practise the React Js and Javascript Technology , So I have Created the small project in that two inputs are there and inputs taken with the user , In that API used random data ."
+    }
+  ]
+}

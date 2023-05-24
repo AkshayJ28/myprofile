@@ -1,0 +1,70 @@
+@media only screen and (max-width: 767px) {
+  .my-introduction {
+    padding-left: 60px;
+  }
+  .services-items .card {
+    margin-bottom: 14px;
+    max-width: 341px;
+    min-height: 106px;
+  }
+  .portfolio-card .card {
+    /* display: flex; */
+    max-width: 250px;
+    margin: auto;
+    margin-top: 14px;
+  }
+  .pricing-items .card {
+    width: 70%;
+    height: 97%;
+    margin: auto;
+  }
+  .form-row {
+    text-align: center;
+  }
+  .blog-img {
+    width: 60%;
+    margin: auto;
+  }
+  .blog {
+    margin-bottom: 14px;
+  }
+  .custom-button{
+    margin-bottom: 12px;
+  }
+}
+.portfolio .card {
+  min-height: 108px;
+}
+.intro-section {
+  background: linear-gradient(
+    to right,
+    rgba(153, 38, 240, 0.95),
+    rgba(209, 34, 227, 0.95)
+  );
+  padding: 1rem 0 0 0; 
+  width: 100%;
+  height: 100%;
+}
+
+p{
+  text-align: justify;
+}
+
+@media (max-width: 991.98px){
+  .blog-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.blog-card .blog-card-header {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+}
+ 
+
+
+
