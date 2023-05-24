@@ -1,0 +1,20 @@
+{
+  "experience":[
+{
+  "id":"1",
+  "comapnyimage":"download.png",
+  "profile":"Devops",
+  "workdescription":"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+  "year":"2018-20",
+  "companyname":"Econnect Pvt Ltd"
+},
+{
+  "id":"2",
+  "comapnyimage":"download.png",
+  "profile":"Devops",
+  "workdescription":"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
+  "year":"2021- Present",
+  "companyname":"Econnect Pvt Ltd"
+}
+  ]
+}

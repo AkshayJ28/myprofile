@@ -13,11 +13,19 @@ import styled from "styled-components";
 
 const Blog = () => {
   const [data, setData] = useState();
+  const [innerData, setInnerData] = useState();
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   useEffect(() => {
+    fetch("blog.json").then((blog) => {
+      blog.json().then((blog) => {
+        setInnerData(blog);
+        console.log(blog);
+      });
+    });
+
     fetch("blog.json").then((blog) => {
       blog.json().then((blog) => {
         setData(blog);
@@ -28,82 +36,65 @@ const Blog = () => {
   return (
     <>
       <SectionHeading title={"Blogs"}></SectionHeading>
+      <BlogInner>
+        {innerData &&
+          innerData.blogs.map((record) => {
+            return (
+              <Modal
+                show={show}
+                onHide={handleClose}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+              >
+                <Modal.Header closeButton>
+                  <Modal.Title id="contained-modal-title-vcenter text-center">
+                    {record.blogheading}
+                  </Modal.Title>
+                </Modal.Header>
+                <Modal.Body style={{ overflowY: "scroll" }}>
+                  <div style={{ textAlign: "center" }}>
+                    <img
+                      src={record.blogimage}
+                      className="blog-inner-img"
+                      style={{
+                        width: "200px",
+                        height: "170px",
+                        borderRadius: "4px",
+                      }}
+                    />
+                  </div>
+                  <br />
+                  <div className="container">
+                    <p>{record.blogdescription}</p>
+                  </div>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            );
+          })}
+      </BlogInner>
 
-      <Modal
-        show={show}
-        onHide={handleClose}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus
-            sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros. Cras mattis consectetur purus sit amet
-            fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus
-            sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros. Cras mattis consectetur purus sit amet
-            fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus
-            sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros. Cras mattis consectetur purus sit amet
-            fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus
-            sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-            vestibulum at eros. Cras mattis consectetur purus sit amet
-            fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
       <MyBlog>
         {data &&
           data.blogs.map((record) => {
             return (
               <div class="blog-card">
                 <div class="blog-card-header">
-                  <img src="blog.jpg" class="blog-card-img" />
+                  <img src={record.blogimage} class="blog-card-img" />
                 </div>
                 <div class="blog-card-body">
                   <h5 class="blog-card-title">{record.blogheading}</h5>
 
                   <p class="blog-card-caption">
-                    <a>By: Admin</a>&nbsp;&nbsp;
+                    <a>By: {record.admin}</a>&nbsp;&nbsp;
                     <FcLike className="like" />
                     &nbsp;
                     <a>234</a>&nbsp;&nbsp;
-                    <a>
-                      &nbsp;
-                      <BiComment /> 123
-                    </a>
                   </p>
                   <p>{record.blogdescription}</p>
 
@@ -122,6 +113,12 @@ const Blog = () => {
     </>
   );
 };
+
+const BlogInner = styled.div`
+  .modal-header .btn-close {
+    margin: 0;
+  }
+`;
 const MyBlog = styled.div`
   .blog-card {
     display: -webkit-box;
@@ -162,6 +159,17 @@ const MyBlog = styled.div`
   .blog-card-link {
     text-decoration: none;
     color: #695aa6;
+  }
+  .blog-inner-img {
+    width: 200px;
+    border-radius: 4px;
+    height: 172px;
+  }
+  .blog-inner-img {
+    height: 100px;
+  }
+  .modal-body {
+    overflow-y: scroll !important;
   }
 `;
 export default Blog;

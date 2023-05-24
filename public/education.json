@@ -13,20 +13,6 @@
   "stream":"BCA",
   "year":"2015-18",
   "institutionname":"University College of Science, Mohanlal Sukhadia University"
-},
-    {
-      "id":"3",
-      "schoolimage":"twelve.jpg",
-      "stream":"12th",
-      "year":"2014-15",
-      "institutionname":"Guru Nanak Public School"
-},
-    {
-  "id":"4",
-  "schoolimage":"tenth.jpg",
-  "stream":"10th",
-  "year":"2012-13",
-  "institutionname":"Guru Nanak Public School"
 }
     
   ]
