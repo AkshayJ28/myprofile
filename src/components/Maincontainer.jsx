@@ -5,6 +5,7 @@ import Introduction from "./Pages/Herosection/Introduction";
 import Aboutme from "./Pages/AboutMe/Aboutme";
 import Services from "./Pages/Services/Services";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import Experience from "./Pages/Experience/Experience";
 import Pricing from "./Pages/Pricing/Pricing";
 import Hiring from "./Pages/Hire/Hiring";
 import Testmonial from "./Pages/Testmonial/Testmonial";
@@ -34,6 +35,10 @@ const Maincontainer = () => {
 
       <Container>
         <Portfolio></Portfolio>
+      </Container>
+
+      <Container>
+        <Experience></Experience>
       </Container>
 
       {/* <Container>

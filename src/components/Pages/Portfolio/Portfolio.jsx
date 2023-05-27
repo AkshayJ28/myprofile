@@ -6,14 +6,7 @@ import SectionHeading from "../../BuildingBlocks/SectionHeading";
 
 const Portfolio = () => {
   const [data, setData] = useState();
-  const [expData, setExpData] = useState();
   useEffect(() => {
-    fetch("experience.json").then((experience) => {
-      experience.json().then((experience) => {
-        setExpData(experience);
-      });
-    });
-
     fetch("education.json").then((education) => {
       education.json().then((education) => {
         setData(education);
@@ -22,13 +15,13 @@ const Portfolio = () => {
   }, []);
   return (
     <>
-      <Education className="row portfolio p-5">
-        <div className="col-md-6">
-          <SectionHeading title={"Education"}></SectionHeading>
+      <SectionHeading title={"Education"}></SectionHeading>
+      <Education>
+        <div className="row portfolio p-5">
           {data &&
             data.education.map((record) => {
               return (
-                <card key={record.id} className="col-md-9 portfolio-card">
+                <card key={record.id} className="col-md-4 portfolio-card">
                   <Card>
                     <Card.Body className="text-center">
                       <img src={record.schoolimage} className="school-logo" />
@@ -38,31 +31,6 @@ const Portfolio = () => {
                       <h6 className="tittle text-center">
                         {record.institutionname}
                         <br />({record.year})
-                      </h6>
-                    </Card.Body>
-                  </Card>
-                </card>
-              );
-            })}
-        </div>
-
-        <div className="col-md-6">
-          <SectionHeading title={"Experience"}></SectionHeading>
-          {expData &&
-            expData.experience.map((record) => {
-              return (
-                <card key={record.id} className="col-md-9 portfolio-card">
-                  <Card>
-                    <Card.Body className="text-center">
-                      <img src={record.comapnyimage} className="school-logo" />
-                      <h3 className="tittle text-center py-2  ">
-                        {record.profile}
-                      </h3>
-                      <h6 className="tittle text-center py-2">
-                        {record.workdescription}
-                      </h6>
-                      <h6 className="tittle text-center">
-                        {record.companyname}&nbsp;&nbsp;({record.year})
                       </h6>
                     </Card.Body>
                   </Card>
@@ -83,11 +51,8 @@ const Education = styled.div`
     transform: scale(1.1);
     z-index: 2;
   }
-
-  .card {
-    max-width: 460px;
-    margin: auto;
-    margin-bottom: 20px;
+  .portfolio {
+    justify-content: center;
   }
 `;
 export default Portfolio;
