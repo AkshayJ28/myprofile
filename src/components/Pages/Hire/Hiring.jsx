@@ -13,15 +13,15 @@ const Hiring = () => {
           </p>
         </div>
         <div className="col-12 col-md-6  hire-button">
-          <a target="_blank" href="#">
+          <a target="_blank" href="https://calendar.google.com/calendar/u/0?cid=YWtzaGF5amFpbjI4MDdAZ21haWwuY29t">
             <img src="google-calendar.png" />
           </a>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <a target="_blank" href="#">
+          <a target="_blank" href="https://www.upwork.com/freelancers/~015552bafa765fdadf">
             <img src="upwork.png" />
           </a>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <a target="_blank" href="#">
+          <a target="_blank" href="https://www.fiverr.com/akshay_jain_28">
             <img src="fiverr.png" className="fiver" />
           </a>
         </div>
