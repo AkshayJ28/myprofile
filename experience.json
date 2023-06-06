@@ -2,19 +2,17 @@
   "experience":[
 {
   "id":"1",
-  "comapnyimage":"download.png",
-  "profile":"Devops",
-  "workdescription":"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
-  "year":"2018-20",
-  "companyname":"Econnect Pvt Ltd"
+  "comapnyimage":"vaagmodo.webp",
+  "profile":"DevOps",
+  "year":"08/2020-10/2021",
+  "companyname":"Vaagmodo Private Limited"
 },
 {
   "id":"2",
   "comapnyimage":"download.png",
-  "profile":"Devops",
-  "workdescription":"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.",
-  "year":"2021- Present",
-  "companyname":"Econnect Pvt Ltd"
+  "profile":"DevOps & Application Administrator",
+  "year":"11/2021- Present",
+  "companyname":"Econnect Solutions Private Limited"
 }
   ]
 }

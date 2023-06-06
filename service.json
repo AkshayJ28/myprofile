@@ -3,42 +3,42 @@
     {
       "image": "jenkins.png",
       "heading": "Jenkins",
-      "description": "Expert in creating CI/CD Pipeline"
+      "description": "Jenkins expert empowering seamless software delivery through automation and CI/CD"
+    },
+    {
+      "image": "ansible.png",
+      "heading": "Ansible",
+      "description": "Master of Ansible for streamlined infrastructure automation and efficient configuration management."
     },
     {
       "image": "docker.webp",
       "heading": "Docker",
-      "description": "I do designing with the help of CSS and used in multiple Projects"
-    },
-    {
-      "image": "ansible.png",
-      "heading": "Javascript",
-      "description": "I have created some projects for practising JavaScript Languages."
-    },
-    {
-      "image": "mysql.png",
-      "heading": "React",
-      "description": "I have created some projects with the help of React Js"
+      "description": "Docker revolutionizing software deployment with lightweight containerization and seamless scalability."
     },
     {
       "image": "kubernates.png",
-      "heading": "Docker",
-      "description": "I do designing with the help of CSS and used in multiple Projects"
+      "heading": "Kubernates",
+      "description": "Kubernetes orchestrating scalable and resilient containerized applications for seamless deployment and management."
     },
     {
       "image": "aws.png",
-      "heading": "Javascript",
-      "description": "I have created some projects for practising JavaScript Languages."
-    },
-    {
-      "image": "grafana.png",
-      "heading": "React",
-      "description": "I have created some projects with the help of React Js"
+      "heading": "AWS",
+      "description": "Harnessing the power of cloud computing to drive innovation and scalability for businesses with AWS."
     },
     {
       "image": "prometheus.webp",
-      "heading": "React",
-      "description": "I have created some projects with the help of React Js"
+      "heading": "Prometheus",
+      "description": "Prometheus maestro enabling proactive monitoring and alerting for optimized performance and reliability."
+    },
+    {
+      "image": "grafana.png",
+      "heading": "Grafana",
+      "description": "Grafana wizard visualizing data with elegance and precision for actionable insights and informed decision-making."
+    },
+    {
+      "image": "mysql.png",
+      "heading": "Terraform",
+      "description": "Terraform maestro sculpting infrastructure as code for seamless provisioning and automation of cloud resources."
     }
   ]
 }
