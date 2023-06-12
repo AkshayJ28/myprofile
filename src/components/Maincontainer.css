@@ -1,10 +1,25 @@
 
-/* 
- @media only screen and (max-width: 417px){
-.resume{
-  font-size: 12px!important;
- }
- } */
+
+@media only screen and (max-width: 500px){
+  .socials {
+     width: 45px!important;
+    height: 102px!important;
+    text-align: center;
+    padding: 7px!important;
+     margin-right: 0px!important; 
+     margin-left: 0px!important; 
+  }
+   .socials .dialer {
+    height: 57%!important;
+    width: 109%!important;
+  }
+  .social-media-links{
+    max-height: 68px!important;
+  }
+  a.resume {
+    font-size: 12px;
+  }
+}
 
 @media only screen and (max-width: 500px){
 
@@ -25,23 +40,22 @@
     width: 50px!important;
 }
 .socials {
- 
-  width: 58px!important;
-  height: 102px!important;
-  text-align: center;
-  padding: 9px!important;
-   margin-right: 0px!important; 
-   margin-left: 0px!important; 
+  width: 45px!important;
+ height: 102px!important;
+ text-align: center;
+ padding: 7px!important;
+  margin-right: 0px!important; 
+  margin-left: 0px!important; 
 }
- .socials .dialer {
-  height: 57%!important;
-  width: 109%!important;
+.socials .dialer {
+ height: 53%!important;
+ width: 109%!important;
 }
 .social-media-links{
   max-height: 68px!important;
 }
 a.resume {
-  font-size: 13px;
+  font-size: 12px;
 }
 }
 @media only screen and (max-width: 767px) {
