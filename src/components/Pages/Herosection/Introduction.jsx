@@ -18,7 +18,7 @@ const Introduction = () => {
                 </span>
               </h1>
               <br />
-              <button type="button" class="rounded-pill btn-rounded">
+              <button type="button" class="get-in-touch rounded-pill btn-rounded">
                 <a href="#contact">
                   {" "}
                   Get in Touch

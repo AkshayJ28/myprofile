@@ -15,10 +15,35 @@ const Aboutme = () => {
         <div className="col-12 col-md-8 about-caption ">
           <SectionHeading title={"About Me"} align="left"></SectionHeading>
           <p className="section-description-about">
-            This is Akshay Jain, Experienced DevOps Engineer with a passion for automating and streamlining processes to enhance software development and deployment. With three years of hands-on experience, I have a solid understanding of the DevOps methodology and its core principles. My expertise lies in designing, implementing, and managing infrastructure as code, continuous integration and continuous deployment (CI/CD) pipelines, and cloud-based solutions.
-            <br />Throughout my career, I have successfully collaborated with cross-functional teams to ensure smooth integration of development and operations. I have a strong foundation in scripting languages such as Bash, Shell and Python, allowing me to automate repetitive tasks and improve overall efficiency. Additionally, I have extensive experience working with configuration management tools like Ansible and containerization technologies like Docker and Kubernetes.
-            <br />I thrive in fast-paced environments where I can utilize my problem-solving skills to identify and resolve issues quickly. I am adept at monitoring and optimizing system performance, ensuring high availability and scalability. Moreover, I am well-versed in implementing security best practices and ensuring compliance with industry standards.
-            <br />As a DevOps Engineer, I am committed to continuous learning and staying up to date with the latest tools and technologies in the field. I am driven by a desire to drive innovation and enable seamless software delivery through efficient infrastructure management and automation. I enjoy collaborating with diverse teams, sharing knowledge, and fostering a culture of continuous improvement.
+            This is Akshay Jain, Experienced DevOps Engineer with a passion for
+            automating and streamlining processes to enhance software
+            development and deployment. With three years of hands-on experience,
+            I have a solid understanding of the DevOps methodology and its core
+            principles. My expertise lies in designing, implementing, and
+            managing infrastructure as code, continuous integration and
+            continuous deployment (CI/CD) pipelines, and cloud-based solutions.
+            <br />
+            Throughout my career, I have successfully collaborated with
+            cross-functional teams to ensure smooth integration of development
+            and operations. I have a strong foundation in scripting languages
+            such as Bash, Shell and Python, allowing me to automate repetitive
+            tasks and improve overall efficiency. Additionally, I have extensive
+            experience working with configuration management tools like Ansible
+            and containerization technologies like Docker and Kubernetes.
+            <br />I thrive in fast-paced environments where I can utilize my
+            problem-solving skills to identify and resolve issues quickly. I am
+            adept at monitoring and optimizing system performance, ensuring high
+            availability and scalability. Moreover, I am well-versed in
+            implementing security best practices and ensuring compliance with
+            industry standards.
+            <br />
+            As a DevOps Engineer, I am committed to continuous learning and
+            staying up to date with the latest tools and technologies in the
+            field. I am driven by a desire to drive innovation and enable
+            seamless software delivery through efficient infrastructure
+            management and automation. I enjoy collaborating with diverse teams,
+            sharing knowledge, and fostering a culture of continuous
+            improvement.
           </p>
           <div className="action-button ">
             <Button>
@@ -44,8 +69,9 @@ const Aboutme = () => {
 };
 const AboutMe = styled.div`
  .about-img-holder img {
-    width: 95%;
-    height: 98%;
+  width: 100%;
+    height: 70%;
+    margin-top: 6rem;
 }
 
   .section-description-about {

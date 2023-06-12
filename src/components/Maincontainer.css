@@ -1,3 +1,49 @@
+
+/* 
+ @media only screen and (max-width: 417px){
+.resume{
+  font-size: 12px!important;
+ }
+ } */
+
+@media only screen and (max-width: 500px){
+
+    button.get-in-touch.rounded-pill.btn-rounded {
+      margin: auto;
+  }
+  .video-box img{
+    margin-top:-50px;
+  }
+   .heading-hiring{
+    text-align: center;
+   }
+   .hire-button{
+    text-align: center!important;
+    margin-top: 17px;
+   }
+   .hire-button a img {
+    width: 50px!important;
+}
+.socials {
+ 
+  width: 58px!important;
+  height: 102px!important;
+  text-align: center;
+  padding: 9px!important;
+   margin-right: 0px!important; 
+   margin-left: 0px!important; 
+}
+ .socials .dialer {
+  height: 57%!important;
+  width: 109%!important;
+}
+.social-media-links{
+  max-height: 68px!important;
+}
+a.resume {
+  font-size: 13px;
+}
+}
 @media only screen and (max-width: 767px) {
   .my-introduction {
     padding-left: 60px;
@@ -46,9 +92,7 @@
   height: 100%;
 }
 
-p{
-  text-align: justify;
-}
+
 
 @media (max-width: 991.98px){
   .blog-card {

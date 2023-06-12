@@ -25,15 +25,14 @@ const Experience = () => {
                   <Card>
                     <Card.Body className="text-center">
                       <img src={record.comapnyimage} className="school-logo" />
-                      <h3 className="tittle text-center py-2">
+                      <h3 className="tittle text-center py-4">
                         {record.profile}
                       </h3>
-                      <h6 className="tittle text-center py-4">
+                      {/* <h6 className="tittle text-center py-4">
                         {record.workdescription}
-                      </h6>
-                      <h5 className="tittle text-center py-1">
-                        {record.companyname}&nbsp;&nbsp;({record.year})
-                      </h5>
+                      </h6> */}
+                      <h5 className="tittle  py-3">{record.companyname}</h5>
+                      <h5 className="tittle">({record.year})</h5>
                     </Card.Body>
                   </Card>
                 </card>

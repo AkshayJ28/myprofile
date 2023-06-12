@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/Maincontainer.css";
 // import Navbarsection from "./HeaderSection/Navbarsection";
 import Introduction from "./Pages/Herosection/Introduction";
 import Aboutme from "./Pages/AboutMe/Aboutme";
@@ -52,17 +53,17 @@ const Maincontainer = () => {
         </Container>
       </Container>
 
-      <Container fluid>
+      {/* <Container fluid>
         <Container>
           <Testmonial></Testmonial>
         </Container>
-      </Container>
+      </Container> */}
 
-      <Container fluid>
+      {/* <Container fluid>
         <Container>
           <Blog></Blog>
         </Container>
-      </Container>
+      </Container> */}
 
       <Container>
         <Container>

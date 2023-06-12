@@ -73,10 +73,10 @@ const Service = styled.div`
     text-align: center;
   }
   .services-items .card:hover .service-description {
-    bottom: 40px;
-    padding-right: 20px;
+    bottom: 25px;
+    
     padding-left: -6px;
-    text-align: justify;
+    
 }
   }
   .services-items .card:hover .service-section-heading {
@@ -100,6 +100,9 @@ const Service = styled.div`
   .card:hover{
    transform:scale(1.1);
    z-index:2;
+  }
+  p{
+    text-align:left
   }
 `;
 export default Services;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../../Maincontainer.css";
 import SectionHeading from "../../BuildingBlocks/SectionHeading";
 const Contact = () => {
   return (
@@ -9,7 +10,6 @@ const Contact = () => {
         <ContactMe className="form-row row"></ContactMe>
         <div className="form-text row">
           <div className="form-group col-sm-12"></div>
-
         </div>
       </form>
     </>

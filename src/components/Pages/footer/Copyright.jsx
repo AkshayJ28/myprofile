@@ -5,7 +5,7 @@ import {
   BsFillEnvelopeFill,
   BsCalendarDayFill,
 } from "react-icons/bs";
-
+import "../../Maincontainer.css";
 import styled from "styled-components";
 
 const Copyright = () => {
@@ -106,8 +106,8 @@ const Footer = styled.div`
     margin-top: -40px;
   }
   .dialer {
-    width: 120% !important;
-    height: 120% !important;
+    width: 120%;
+    height: 120%;
   }
   .copyright-text {
     margin-top: 50px;
