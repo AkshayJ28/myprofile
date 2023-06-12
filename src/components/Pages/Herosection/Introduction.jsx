@@ -33,11 +33,7 @@ const Introduction = () => {
 
             <div class="col-md-6 intros text-end">
               <div class="video-box">
-                <img
-                  src="header.png"
-                  alt="video illutration"
-                  class="img-fluid"
-                />
+                <img src="Programmer-animate.gif" class="img-fluid" />
               </div>
             </div>
           </div>

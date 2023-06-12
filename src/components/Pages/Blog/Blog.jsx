@@ -5,13 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
-import Button from "react-bootstrap/Button";
+
 import Card from "react-bootstrap/Card";
 
-import Modal from "react-bootstrap/Modal";
-
 import SectionHeading from "../../BuildingBlocks/SectionHeading";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
+import ModalWrapper from "../../BuildingBlocks/ModalWrapper";
 
 const Blog = () => {
   const settings = {
@@ -52,23 +51,37 @@ const Blog = () => {
     ],
   };
   const [data, setData] = useState();
+
   const [innerData, setInnerData] = useState();
   const [show, setShow] = useState(false);
+  const [heading, setHeading] = useState(false);
+  const [img, setImg] = useState(false);
+  const [description, setDescription] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (id) => {
+    // console.log(id, "pa");
+    setHeading(innerData?.blogsinner[id].blogheading);
+    setImg(innerData?.blogsinner[id].blogimage);
+    setDescription(innerData?.blogsinner[id].blogdescription);
+    setShow(true);
+  };
+
   useEffect(() => {
-    fetch("blog.json").then((blog) => {
-      blog.json().then((blog) => {
-        setInnerData(blog);
-        console.log(blog);
+    fetch("bloginner.json").then((bloginner) => {
+      bloginner.json().then((bloginner) => {
+        setInnerData(bloginner);
+        // console.log(bloginner, "Data");
+        setTimeout(() => {
+          console.log(innerData, "Data");
+        }, 200);
       });
     });
 
     fetch("blog.json").then((blog) => {
       blog.json().then((blog) => {
         setData(blog);
-        console.log(blog);
+        console.log(data, "BlogData");
       });
     });
   }, []);
@@ -76,48 +89,13 @@ const Blog = () => {
     <>
       <SectionHeading title={"Blogs"}></SectionHeading>
       <BlogInner>
-        {innerData &&
-          innerData.blogs.map((record) => {
-            return (
-              <>
-                <Modal
-                  show={show}
-                  onHide={handleClose}
-                  size="lg"
-                  aria-labelledby="contained-modal-title-vcenter"
-                  centered
-                >
-                  <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter text-center">
-                      {record.blogheading}
-                    </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body style={{ overflowY: "scroll" }}>
-                    <div style={{ textAlign: "center" }}>
-                      <img
-                        src={record.blogimage}
-                        className="blog-inner-img"
-                        style={{
-                          width: "200px",
-                          height: "170px",
-                          borderRadius: "4px",
-                        }}
-                      />
-                    </div>
-                    <br />
-                    <div className="container">
-                      <p>{record.blogdescription}</p>
-                    </div>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                      Close
-                    </Button>
-                  </Modal.Footer>
-                </Modal>
-              </>
-            );
-          })}
+        <ModalWrapper
+          heading={heading}
+          content={description}
+          img={img}
+          handleClose={handleClose}
+          show={show}
+        />
       </BlogInner>
 
       <MyBlog>
@@ -126,7 +104,7 @@ const Blog = () => {
             {data &&
               data.blogs.map((record) => {
                 return (
-                  <div className="col-md-4">
+                  <div key={record.id} className="col-md-4 card-content">
                     <Card>
                       <Card.Img
                         className="blog-img"
@@ -140,7 +118,10 @@ const Blog = () => {
                         <Card.Text>
                           {record.smalldescription}
                           &nbsp;&nbsp;
-                          <a class="blog-card-link" onClick={handleShow}>
+                          <a
+                            class="blog-card-link"
+                            onClick={() => handleShow(record.id)}
+                          >
                             Read more
                             <svg
                               stroke="currentColor"
@@ -195,6 +176,11 @@ const MyBlog = styled.div`
   }
   .card {
     margin-right: 12px;
+    max-width: 378px;
+    margin: auto;
+  }
+  .card-content {
+    margin: auto;
   }
 `;
 export default Blog;
