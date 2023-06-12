@@ -40,7 +40,7 @@
     width: 50px!important;
 }
 .socials {
-  width: 45px!important;
+  width: 40px!important;
  height: 102px!important;
  text-align: center;
  padding: 7px!important;
@@ -48,14 +48,14 @@
   margin-left: 0px!important; 
 }
 .socials .dialer {
- height: 53%!important;
+ height: 45%!important;
  width: 109%!important;
 }
 .social-media-links{
   max-height: 68px!important;
 }
 a.resume {
-  font-size: 12px;
+  font-size: 10px;
 }
 }
 @media only screen and (max-width: 767px) {
