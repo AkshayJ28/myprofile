@@ -15,15 +15,10 @@ const Aboutme = () => {
         <div className="col-12 col-md-8 about-caption ">
           <SectionHeading title={"About Me"} align="left"></SectionHeading>
           <p className="section-description-about">
-            My name is Akshay Jain, I am a computer technician with a great
-            passion for programming. I am passionate about delivering solutions
-            that add to people's lives and at the same time challenge me.
-            Improved my skills as a Front-End Developer. I develop websites and
-            applications using React, HTML, CSS, and JavaScript. I am familiar
-            with developing layouts that are provided to me. I'm always
-            improving myself with each project put in my hands. I am a dedicated
-            person who pursues his dreams, hardworking and results oriented, I
-            always seek to achieve my best version.
+            This is Akshay Jain, Experienced DevOps Engineer with a passion for automating and streamlining processes to enhance software development and deployment. With three years of hands-on experience, I have a solid understanding of the DevOps methodology and its core principles. My expertise lies in designing, implementing, and managing infrastructure as code, continuous integration and continuous deployment (CI/CD) pipelines, and cloud-based solutions.
+            <br />Throughout my career, I have successfully collaborated with cross-functional teams to ensure smooth integration of development and operations. I have a strong foundation in scripting languages such as Bash, Shell and Python, allowing me to automate repetitive tasks and improve overall efficiency. Additionally, I have extensive experience working with configuration management tools like Ansible and containerization technologies like Docker and Kubernetes.
+            <br />I thrive in fast-paced environments where I can utilize my problem-solving skills to identify and resolve issues quickly. I am adept at monitoring and optimizing system performance, ensuring high availability and scalability. Moreover, I am well-versed in implementing security best practices and ensuring compliance with industry standards.
+            <br />As a DevOps Engineer, I am committed to continuous learning and staying up to date with the latest tools and technologies in the field. I am driven by a desire to drive innovation and enable seamless software delivery through efficient infrastructure management and automation. I enjoy collaborating with diverse teams, sharing knowledge, and fostering a culture of continuous improvement.
           </p>
           <div className="action-button ">
             <Button>

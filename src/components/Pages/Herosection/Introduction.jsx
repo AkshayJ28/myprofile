@@ -14,9 +14,7 @@ const Introduction = () => {
               <h1 class="display-2">
                 <span class="display-2--intro">Hey!, I'm Akshay</span>
                 <span class="display-2--description lh-base">
-                  Motivated DevOps engineer skilled in Cloud Infrastructure,
-                  System admin, and Database. Automates workflows and optimizes
-                  software devlopment processes to drive growth.
+                Driving efficiency and innovation through streamlined processes and automation, I am a seasoned DevOps Engineer, dedicated to bridging the gap between development and operations for enhanced software delivery.
                 </span>
               </h1>
               <br />

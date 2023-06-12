@@ -18,7 +18,7 @@ const Copyright = () => {
               className="socials"
               target={"_blank"}
               title="Mail Me"
-              href="https://calendar.google.com/calendar/embed?src=paurushartwani09%40gmail.com&ctz=Asia%2FKolkata"
+              href="mailto:akshayjain2807@gmail.com"
             >
               <img src="gmail.svg" />
             </a>
@@ -36,7 +36,7 @@ const Copyright = () => {
               className="socials"
               target={"_blank"}
               title="Linkdin"
-              href="https://calendar.google.com/calendar/embed?src=paurushartwani09%40gmail.com&ctz=Asia%2FKolkata"
+              href="https://www.linkedin.com/in/akshay-jain-126970119/"
             >
               <img src="linkedin.svg" />
             </a>
@@ -45,7 +45,7 @@ const Copyright = () => {
               className="socials"
               target={"_blank"}
               title="Instagram"
-              href="https://www.instagram.com/paurush_artwani09/"
+              href="https://www.instagram.com/iamakki28/"
             >
               <img src="instagram.svg" />
             </a>
@@ -54,7 +54,7 @@ const Copyright = () => {
               className="socials"
               target={"_blank"}
               title="Facebook"
-              href="https://www.facebook.com/people/Paurush-Artwani/pfbid0Q6zvzkYCdbzufnuktnkkKWm6Qt2M9euCX2yNpqA4MikDcQWhkWgBPMNNpJFTXtRRl/"
+              href="https://www.facebook.com/iamakki28/"
             >
               <img src="facebook.svg" />
             </a>
@@ -63,7 +63,7 @@ const Copyright = () => {
               className="socials"
               target={"_blank"}
               title="Twitter"
-              href="https://www.facebook.com/people/Paurush-Artwani/pfbid0Q6zvzkYCdbzufnuktnkkKWm6Qt2M9euCX2yNpqA4MikDcQWhkWgBPMNNpJFTXtRRl/"
+              href="https://twitter.com/AkshayJ2807?t=7H0ZJ_3lyIMs7zWsxB8jRw&s=09"
             >
               <img src="twitter.svg" />
             </a>
