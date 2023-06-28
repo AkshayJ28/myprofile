@@ -36,7 +36,7 @@
       "description": "Grafana wizard visualizing data with elegance and precision for actionable insights and informed decision-making."
     },
     {
-      "image": "mysql.png",
+      "image": "terraform.png",
       "heading": "Terraform",
       "description": "Terraform maestro sculpting infrastructure as code for seamless provisioning and automation of cloud resources."
     }

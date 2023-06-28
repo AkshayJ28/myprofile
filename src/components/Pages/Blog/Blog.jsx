@@ -19,7 +19,7 @@ const Blog = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
@@ -68,13 +68,16 @@ const Blog = () => {
   };
 
   useEffect(() => {
-    fetch("bloginner.json").then((bloginner) => {
+    fetch(
+      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@akshayjain2807"
+    ).then((bloginner) => {
       bloginner.json().then((bloginner) => {
         setInnerData(bloginner);
-        // console.log(bloginner, "Data");
-        setTimeout(() => {
-          console.log(innerData, "Data");
-        }, 200);
+        console.log(bloginner, "Paurush");
+
+        // setTimeout(() => {
+        //   console.log(innerData, "Data");
+        // }, 200);
       });
     });
 
@@ -113,10 +116,10 @@ const Blog = () => {
                       />
                       <Card.Body>
                         <Card.Title className="text-center">
-                          {record.blogheading}
+                          {record.description}
                         </Card.Title>
                         <Card.Text>
-                          {record.smalldescription}
+                          {record.title}
                           &nbsp;&nbsp;
                           <a
                             class="blog-card-link"

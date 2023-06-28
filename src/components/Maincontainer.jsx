@@ -11,6 +11,7 @@ import Pricing from "./Pages/Pricing/Pricing";
 import Hiring from "./Pages/Hire/Hiring";
 import Testmonial from "./Pages/Testmonial/Testmonial";
 import Blog from "./Pages/Blog/Blog";
+import Blog2 from "./Pages/Blog/Blog2";
 import Contact from "./Pages/ContactMe/Contact";
 import Copyright from "./Pages/footer/Copyright";
 
@@ -64,6 +65,12 @@ const Maincontainer = () => {
           <Blog></Blog>
         </Container>
       </Container> */}
+
+      <Container fluid>
+        <Container>
+          <Blog2></Blog2>
+        </Container>
+      </Container>
 
       <Container>
         <Container>
