@@ -5,6 +5,7 @@ import { TbCalendarEvent } from "react-icons/tb";
 import Scraper from "./Scraper";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SectionHeading from "../../BuildingBlocks/SectionHeading";
 
 import Slider from "react-slick";
 import styled from "styled-components";
@@ -61,64 +62,67 @@ const Blog2 = () => {
     });
   }, []);
   return (
-    <Blog class="container ">
-      <div className="blog-section">
-        <div className="row">
-          <Slider {...settings}>
-            {data &&
-              data.items.map((record) => {
-                const tagline = record.description.split(">");
-                return (
-                  <>
-                    <div className="col-12 col-md-4 card-data-column">
-                      <div class="card">
-                        <div class="card-header">
-                          <img src={record.thumbnail} alt="rover" />
-                        </div>
-                        <div class="card-body">
-                          <div class="user">
-                            <img src={profileImg} alt="user" />
+    <>
+      <SectionHeading title={"Blogs"}></SectionHeading>
+      <Blog class="container ">
+        <div className="blog-section">
+          <div className="row">
+            <Slider {...settings}>
+              {data &&
+                data.items.map((record) => {
+                  const tagline = record.description.split(">");
+                  return (
+                    <>
+                      <div className="col-12 col-md-4 card-data-column">
+                        <div class="card">
+                          <div class="card-header">
+                            <img src={record.thumbnail} alt="rover" />
                           </div>
-                          <h4>{record.title}</h4>
-                          <p>{tagline[1].slice(0, -4)}</p>
+                          <div class="card-body">
+                            <div class="user">
+                              <img src={profileImg} alt="user" />
+                            </div>
+                            <h4>{record.title}</h4>
+                            <p>{tagline[1].slice(0, -4)}</p>
 
-                          <div class="user-info">
-                            <IoMdContact />
-                            <label>{record.author}</label>
-                          </div>
-                          <div class="blog-date">
-                            <TbCalendarEvent />
-                            <label>{record.pubDate}</label>
-                          </div>
-                          <a
-                            class="blog-card-link"
-                            target="_blank"
-                            href={record.link}
-                          >
-                            Read more
-                            <svg
-                              stroke="currentColor"
-                              fill="currentColor"
-                              stroke-width="0"
-                              viewBox="0 0 24 24"
-                              height="1em"
-                              width="1em"
-                              xmlns="http://www.w3.org/2000/svg"
+                            <div class="user-info">
+                              <IoMdContact />
+                              <label>{record.author}</label>
+                            </div>
+                            <div class="blog-date">
+                              <TbCalendarEvent />
+                              <label>{record.pubDate}</label>
+                            </div>
+                            <a
+                              class="blog-card-link"
+                              target="_blank"
+                              href={record.link}
                             >
-                              <path d="M10.296 7.71 14.621 12l-4.325 4.29 1.408 1.42L17.461 12l-5.757-5.71z"></path>
-                              <path d="M6.704 6.29 5.296 7.71 9.621 12l-4.325 4.29 1.408 1.42L12.461 12z"></path>
-                            </svg>
-                          </a>
+                              Read more
+                              <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                stroke-width="0"
+                                viewBox="0 0 24 24"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M10.296 7.71 14.621 12l-4.325 4.29 1.408 1.42L17.461 12l-5.757-5.71z"></path>
+                                <path d="M6.704 6.29 5.296 7.71 9.621 12l-4.325 4.29 1.408 1.42L12.461 12z"></path>
+                              </svg>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </>
-                );
-              })}
-          </Slider>
+                    </>
+                  );
+                })}
+            </Slider>
+          </div>
         </div>
-      </div>
-    </Blog>
+      </Blog>
+    </>
   );
 };
 const Blog = styled.div`
